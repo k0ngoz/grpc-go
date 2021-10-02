@@ -913,4 +913,4 @@ const (
 	SupportPackageIsVersion7 = true
 )
 
-const GrpcUA = "grpc-go/" + Version
+var GrpcUA = "grpc-go/" + Version
