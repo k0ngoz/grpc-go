@@ -205,9 +205,9 @@ func DialContext(ctx context.Context, target string, opts ...DialOption) (conn *
 	cc.mkp = cc.dopts.copts.KeepaliveParams
 
 	if cc.dopts.copts.UserAgent != "" {
-		cc.dopts.copts.UserAgent += " " + grpcUA
+		cc.dopts.copts.UserAgent += " " + GrpcUA
 	} else {
-		cc.dopts.copts.UserAgent = grpcUA
+		cc.dopts.copts.UserAgent = GrpcUA
 	}
 
 	if cc.dopts.timeout > 0 {
